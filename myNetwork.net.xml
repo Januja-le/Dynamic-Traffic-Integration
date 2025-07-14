@@ -1,0 +1,21 @@
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-65.98,-21.10,38.78,39.51" origBoundary="10000000000.00,10000000000.00,-10000000000.00,-10000000000.00" projParameter="!"/>
+
+    <!-- Define edges -->
+    <edge id="E0" from="J0" to="J1" priority="-1">
+        <lane id="E0_0" index="0" speed="13.89" length="60.62" shape="-19.65,39.48 -18.55,-21.13"/>
+    </edge>
+    <edge id="E1" from="J2" to="J3" priority="-1">
+        <lane id="E1_0" index="0" speed="13.89" length="104.76" shape="-65.97,7.91 38.79,8.28"/>
+    </edge>
+    <edge id="E2" from="J1" to="J2" priority="-1">
+        <lane id="E2_0" index="0" speed="13.89" length="50.00" shape="-16.95,-21.10 -65.98,9.51"/>
+    </edge>
+
+    <!-- Define junctions -->
+    <junction id="J0" type="dead_end" x="-18.05" y="39.51" incLanes="" intLanes="" shape="-18.05,39.51 -21.25,39.45"/>
+    <junction id="J1" type="dead_end" x="-16.95" y="-21.10" incLanes="E0_0" intLanes="" shape="-20.15,-21.16 -16.95,-21.10"/>
+    <junction id="J2" type="dead_end" x="-65.98" y="9.51" incLanes="E2_0" intLanes="" shape="-65.98,9.51 -65.96,6.31"/>
+    <junction id="J3" type="dead_end" x="38.78" y="9.88" incLanes="E1_0" intLanes="" shape="38.79,6.68 38.78,9.88"/>
+</net>

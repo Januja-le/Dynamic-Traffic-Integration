@@ -1,0 +1,12 @@
+<routes>
+    <!-- Define a vehicle type -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="13.89" color="1,0,0"/>
+
+    <!-- Define a route using edges E0, E2, and E1 -->
+    <route id="route1" edges="E0 E2 E1"/>
+
+    <!-- Define vehicles using the route -->
+    <vehicle id="veh1" type="car" route="route1" depart="0"/>
+    <vehicle id="veh2" type="car" route="route1" depart="10"/>
+    <vehicle id="veh3" type="car" route="route1" depart="20"/>
+</routes>

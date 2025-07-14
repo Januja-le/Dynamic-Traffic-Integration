@@ -1,0 +1,5 @@
+<configuration>
+    <input>
+        <net-file value="C:\Users\Januj\Downloads\map.net.xml"/>
+    </input>
+</configuration>
